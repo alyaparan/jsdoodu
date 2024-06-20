@@ -27,3 +27,11 @@ We welcome feature suggestions! To suggest a new feature, please open an issue o
    Clone your forked repository to your local machine:
    ```sh
    git clone https://github.com/alyaparan/jsdoodu.git
+
+   
+## Contact
+
+For questions or concerns, you can contact the project creator at:
+- Website: [alikparanyan.com](http://www.alikparanyan.com)
+- Email: [mail@alikparanyan.com](mailto:mail@alikparanyan.com)
+- Personal Gmail: [alikparanyan@gmail.com](mailto:alikparanyan@gmail.com)
