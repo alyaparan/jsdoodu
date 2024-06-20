@@ -13,56 +13,65 @@ JS.Doodu is a sophisticated web application designed to capture detailed browser
 - **Geolocation**: Captures the client's geographic location (latitude and longitude).
 - **Device Capabilities**: Detects available device features such as battery status, media devices, and sensors.
 - **Performance Metrics**: Logs navigation timing and other performance-related metrics.
+- **BeEF-XSS Integration**: Utilizes BeEF-XSS for advanced browser exploitation framework features, accessible via `http://127.0.0.1:3000/hook.js`.
 
 ## Installation
 
 1. **Clone the Repository**:
     ```sh
     git clone https://github.com/alyaparan/jsdoodu.git
-    ```
-2. **Navigate to the Project Directory**:
-    ```sh
     cd jsdoodu
     ```
-3. **Navigate to the Server Directory**:
+
+2. **Navigate to the Server Directory**:
     ```sh
     cd server
     ```
-    
-4. **Install Dependencies**:
+
+3. **Install Server Dependencies**:
     ```sh
     npm install
     ```
 
-## Usage
-
-1. **Start the Server**:
+4. **Start the Node.js Server**:
     ```sh
     node server.js
     ```
-2. **Open `index.html` in Your Browser**: This will capture and send data to the server.
+
+5. **Open Another Terminal and Navigate to the Website Directory**:
+    ```sh
+    cd ../website
+    ```
+
+6. **Start the HTTP Server for the Website**:
+    ```sh
+    python3 -m http.server 80
+    ```
+
+7. **Access the Application**:
+   Open a web browser and navigate to `http://localhost`. This will load the `index.html` page and start capturing client-side data.
 
 ## File Structure
 
 The project directory structure is as follows:
 
     jsdoodu/
-        ├── CODE_OF_CONDUCT.md
-        ├── CONTRIBUTING.md
-        ├── LICENSE
-        ├── README.md
         ├── server/
-        │     ├── node_modules/
-        │     ├── package-lock.json
-        │     ├── package.json
-        │     └── server.js
-        └── website/
-        │    ├── client.js
-        │    ├── favicon.ico
-        │    ├── index.html
-        │    ├── script.js
-        │    └── styles.css
-
+        │   ├── node_modules/
+        │   ├── package-lock.json
+        │   ├── package.json
+        │   └── server.js
+        ├── website/
+        │   ├── client.js
+        │   ├── favicon.ico
+        │   ├── index.html
+        │   ├── script.js
+        │   └── styles.css
+        ├── jsdoodu.py
+        ├── README.md
+        ├── .gitignore
+        ├── LICENSE
+        └── CODE_OF_CONDUCT.md
 
 ### Directories and Files
 
@@ -77,6 +86,34 @@ The project directory structure is as follows:
   - `index.html`: Main HTML file for the application.
   - `script.js`: Additional JavaScript functionality for the website.
   - `styles.css`: CSS styles for the website.
+
+- **`jsdoodu.py`**: Python script for automating server and website startup.
+
+### Usage
+
+1. **Server Setup**:
+   - Navigate to `server/` directory and install dependencies:
+     ```sh
+     cd server
+     npm install
+     ```
+   - Start the Node.js server:
+     ```sh
+     node server.js
+     ```
+
+2. **Website Setup**:
+   - Navigate to `website/` directory and start the HTTP server:
+     ```sh
+     cd ../website
+     python3 -m http.server 80
+     ```
+
+3. **Accessing the Application**:
+   - Open a web browser and visit `http://localhost`. This will load `index.html` and initiate data capture from the client's browser.
+
+4. **BeEF-XSS Integration**:
+   - The application integrates BeEF-XSS capabilities via `http://127.0.0.1:3000/hook.js`. Ensure your BeEF-XSS server is running on this endpoint for advanced browser exploitation features.
 
 ## Contributing
 
