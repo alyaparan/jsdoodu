@@ -24,7 +24,12 @@ JS.Doodu is a sophisticated web application designed to capture detailed browser
     ```sh
     cd jsdoodu
     ```
-3. **Install Dependencies**:
+3. **Navigate to the Server Directory**:
+    ```sh
+    cd server
+    ```
+    
+4. **Install Dependencies**:
     ```sh
     npm install
     ```
