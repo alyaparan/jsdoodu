@@ -1,0 +1,16 @@
+{
+  "name": "JS.Doodu",
+  "version": "1.0.1",
+  "description": "A web application that captures browser and system information from the client and sends it to a Node.js server.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "formidable": "^3.5.1"
+  },
+  "author": "Alik Paranyan",
+  "license": "Apache-2.0"
+}
