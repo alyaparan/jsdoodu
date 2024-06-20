@@ -18,11 +18,11 @@ JS.Doodu is a sophisticated web application designed to capture detailed browser
 
 1. **Clone the Repository**:
     ```sh
-    git clone https://github.com/your-username/JS.Doodu.git
+    git clone https://github.com/alyaparan/jsdoodu.git
     ```
 2. **Navigate to the Project Directory**:
     ```sh
-    cd JS.Doodu
+    cd jsdoodu
     ```
 3. **Install Dependencies**:
     ```sh
