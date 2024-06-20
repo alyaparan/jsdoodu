@@ -57,11 +57,11 @@ The project directory structure is as follows:
         │     ├── package.json
         │     └── server.js
         └── website/
-        |    ├── client.js
-        |    ├── favicon.ico
-        |    ├── index.html
-        |    ├── script.js
-        |    └── styles.css
+        │    ├── client.js
+        │    ├── favicon.ico
+        │    ├── index.html
+        │    ├── script.js
+        │    └── styles.css
 
 
 ### Directories and Files
