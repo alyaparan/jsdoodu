@@ -39,3 +39,46 @@ JS.Doodu is a sophisticated web application designed to capture detailed browser
 
 ## File Structure
 
+The project directory structure is as follows:
+
+jsdoodu/
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── package-lock.json
+├── server/
+│ ├── node_modules/
+│ ├── package-lock.json
+│ ├── package.json
+│ └── server.js
+└── website/
+├── client.js
+├── favicon.ico
+├── index.html
+├── script.js
+└── styles.css
+
+
+### Directories and Files
+
+- **`server/`**: Contains the Node.js server files.
+  - `node_modules/`: Directory for Node.js dependencies.
+  - `package-lock.json`, `package.json`: Node.js package management files.
+  - `server.js`: Main server script.
+
+- **`website/`**: Contains the client-side files for the web application.
+  - `client.js`: Client-side JavaScript file.
+  - `favicon.ico`: Favicon for the website.
+  - `index.html`: Main HTML file for the application.
+  - `script.js`: Additional JavaScript functionality for the website.
+  - `styles.css`: CSS styles for the website.
+
+## Contributing
+
+- **Code of Conduct**: Please adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) when contributing.
+- **Contributing Guidelines**: Read the [Contributing Guidelines](CONTRIBUTING.md) before submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
