@@ -92,11 +92,7 @@ The project directory structure is as follows:
 ### Usage
 
 1. **Server Automatically Setup and Startup**:
-   - Navigate to `server/` directory and install dependencies:
-     ```sh
-     cd jsdoodu
-
-     ```
+   - Navigate to `jsdoodu/` directory and run command:
      ```sh
      python3 jsdoodu.py
      ```
