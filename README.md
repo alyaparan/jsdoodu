@@ -69,6 +69,7 @@ The project directory structure is as follows:
         │   └── styles.css
         ├── jsdoodu.py
         ├── config.json
+        ├── jsdoodu.log
         ├── README.md
         ├── .gitignore
         ├── LICENSE
@@ -90,6 +91,7 @@ The project directory structure is as follows:
 
 - **`jsdoodu.py`**: Python script for automating server and website startup.
 - **`config.json`**: Config json script for Python file and web configuration.
+- **`jsdoodu.log`**: JS.Doodu log file for Python script to logging web requests.
 
 ### Usage
 
