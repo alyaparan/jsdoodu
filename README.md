@@ -47,22 +47,21 @@ JS.Doodu is a sophisticated web application designed to capture detailed browser
 The project directory structure is as follows:
 
     jsdoodu/
-    ├── CODE_OF_CONDUCT.md
-    ├── CONTRIBUTING.md
-    ├── LICENSE
-    ├── README.md
-    ├── package-lock.json
-    ├── server/
-    │ ├── node_modules/
-    │ ├── package-lock.json
-    │ ├── package.json
-    │ └── server.js
-    └── website/
-    ├── client.js
-    ├── favicon.ico
-    ├── index.html
-    ├── script.js
-    └── styles.css
+        ├── CODE_OF_CONDUCT.md
+        ├── CONTRIBUTING.md
+        ├── LICENSE
+        ├── README.md
+        ├── server/
+        │     ├── node_modules/
+        │     ├── package-lock.json
+        │     ├── package.json
+        │     └── server.js
+        └── website/
+        |    ├── client.js
+        |    ├── favicon.ico
+        |    ├── index.html
+        |    ├── script.js
+        |    └── styles.css
 
 
 ### Directories and Files
