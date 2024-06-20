@@ -91,22 +91,14 @@ The project directory structure is as follows:
 
 ### Usage
 
-1. **Server Setup**:
+1. **Server Automatically Setup and Startup**:
    - Navigate to `server/` directory and install dependencies:
      ```sh
-     cd server
-     npm install
-     ```
-   - Start the Node.js server:
-     ```sh
-     node server.js
-     ```
+     cd jsdoodu
 
-2. **Website Setup**:
-   - Navigate to `website/` directory and start the HTTP server:
+     ```
      ```sh
-     cd ../website
-     python3 -m http.server 80
+     python3 jsdoodu.py
      ```
 
 3. **Accessing the Application**:
