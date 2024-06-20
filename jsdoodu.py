@@ -9,12 +9,14 @@ import logging
 import json
 import time
 import urllib.request
+import psycopg2
 
 # Get the current script directory
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Configure logging to file
+log_file = os.path.join(script_dir, 'jsdoodu.log')
+logging.basicConfig(filename=log_file, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
 # Function to load configuration from JSON file
@@ -103,6 +105,34 @@ def signal_handler(sig, frame):
 
     sys.exit(0)
 
+# Function to connect to PostgreSQL database
+def connect_to_database():
+    try:
+        db_config = config['database']  # Assuming 'database' section exists in config.json
+        conn = psycopg2.connect(
+            dbname=db_config['dbname'],
+            user=db_config['user'],
+            password=db_config['password'],
+            host=db_config['host'],
+            port=db_config.get('port', 5432)  # Default PostgreSQL port
+        )
+        return conn
+    except Exception as e:
+        logger.error(f"Failed to connect to database: {e}")
+        return None
+
+# Function to perform a sample database query
+def perform_database_query(conn):
+    try:
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM your_table")
+        rows = cursor.fetchall()
+        for row in rows:
+            logger.info(f"Database row: {row}")
+        cursor.close()
+    except Exception as e:
+        logger.error(f"Error executing database query: {e}")
+
 if __name__ == "__main__":
     # Load configuration
     config = load_config()
@@ -122,11 +152,19 @@ if __name__ == "__main__":
     http_port = config.get('http_port', 80)
     start_http_server(http_port)
 
+    # Connect to the database
+    db_conn = connect_to_database()
+
     # Periodically check Node.js server health
     health_check_interval = config.get('health_check_interval', 60)
-    while True:
-        check_node_server_health()
-        time.sleep(health_check_interval)
+    try:
+        while True:
+            check_node_server_health()
+            if db_conn:
+                perform_database_query(db_conn)
+            time.sleep(health_check_interval)
+    except KeyboardInterrupt:
+        logger.info("Keyboard interrupt detected. Exiting...")
 
     # Wait for the Node.js server thread to complete (which it won't unless interrupted)
     node_thread.join()
