@@ -10,11 +10,11 @@ By participating in this project, you agree to abide by our [Code of Conduct](CO
 
 ### Reporting Bugs
 
-If you find a bug in the project, please create an issue in our [GitHub Issues](https://github.com/your-username/JS.Doodu/issues) page. Make sure to include detailed information about the bug, how to reproduce it, and any relevant screenshots or logs.
+If you find a bug in the project, please create an issue in our [GitHub Issues](https://github.com/alyaparan/jsdoodu/issues) page. Make sure to include detailed information about the bug, how to reproduce it, and any relevant screenshots or logs.
 
 ### Suggesting Features
 
-We welcome feature suggestions! To suggest a new feature, please open an issue on our [GitHub Issues](https://github.com/your-username/JS.Doodu/issues) page with the label `enhancement`. Provide a detailed description of the feature and any benefits it would bring to the project.
+We welcome feature suggestions! To suggest a new feature, please open an issue on our [GitHub Issues](https://github.com/alyaparan/jsdoodu/issues) page with the label `enhancement`. Provide a detailed description of the feature and any benefits it would bring to the project.
 
 ### Submitting Pull Requests
 
@@ -26,4 +26,4 @@ We welcome feature suggestions! To suggest a new feature, please open an issue o
 
    Clone your forked repository to your local machine:
    ```sh
-   git clone https://github.com/your-username/JS.Doodu.git
+   git clone https://github.com/alyaparan/jsdoodu.git
