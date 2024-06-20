@@ -87,3 +87,10 @@ The project directory structure is as follows:
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or concerns, you can contact the project creator at:
+- Website: [alikparanyan.com](http://www.alikparanyan.com)
+- Email: [mail@alikparanyan.com](mailto:mail@alikparanyan.com)
+- Personal Gmail: [alikparanyan@gmail.com](mailto:alikparanyan@gmail.com)
