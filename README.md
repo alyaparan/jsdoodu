@@ -1,6 +1,6 @@
 # JS.Doodu
 
-## Version 1.0.1
+## Version 1.1.0
 
 JS.Doodu is a sophisticated web application designed to capture detailed browser and system information from the client and send it to a Node.js server for storage and analysis. This tool is perfect for web developers, data analysts, cybersecurity enthusiasts, and ethical hackers looking to gain deep insights into client-side environments.
 
@@ -14,6 +14,7 @@ JS.Doodu is a sophisticated web application designed to capture detailed browser
 - **Device Capabilities**: Detects available device features such as battery status, media devices, and sensors.
 - **Performance Metrics**: Logs navigation timing and other performance-related metrics.
 - **BeEF-XSS Integration**: Utilizes BeEF-XSS for advanced browser exploitation framework features, accessible via `http://127.0.0.1:3000/hook.js`.
+- **JSON Data Viewer**: A Python-based Qt application for analyzing, filtering, and monitoring captured JSON files.
 
 ## Installation
 
@@ -51,6 +52,16 @@ JS.Doodu is a sophisticated web application designed to capture detailed browser
 7. **Access the Application**:
    Open a web browser and navigate to `http://localhost`. This will load the `index.html` page and start capturing client-side data.
 
+8. **Install Python Dependencies for the JSON Data Viewer**:
+    ```sh
+    pip install PyQt5 matplotlib pandas plotly
+    ```
+
+9. **Run the JSON Data Viewer**:
+    ```sh
+    python3 json_viewer.py
+    ```
+
 ## File Structure
 
 The project directory structure is as follows:
@@ -67,7 +78,7 @@ The project directory structure is as follows:
         │   ├── index.html
         │   ├── script.js
         │   └── styles.css
-        ├── jsdoodu.py
+        ├── json_viewer.py
         ├── config.json
         ├── jsdoodu.log
         ├── README.md
@@ -89,9 +100,26 @@ The project directory structure is as follows:
   - `script.js`: Additional JavaScript functionality for the website.
   - `styles.css`: CSS styles for the website.
 
-- **`jsdoodu.py`**: Python script for automating server and website startup.
-- **`config.json`**: Config json script for Python file and web configuration.
-- **`jsdoodu.log`**: JS.Doodu log file for Python script to logging web requests.
+- **`json_viewer.py`**: Python script for viewing, analyzing, and managing captured JSON files.
+- **`config.json`**: Config JSON script for Python file and web configuration.
+- **`jsdoodu.log`**: JS.Doodu log file for Python script to log web requests.
+
+### JSON Data Viewer Features
+
+- **Data Visualization**: Visualize data using Plotly.
+- **Advanced Filtering**: Filter JSON files based on specific criteria.
+- **Real-time Monitoring**: Monitor new JSON files being added to the directory.
+- **Export and Import**: Export filtered data to CSV.
+- **Search Functionality**: Search for specific terms or values within the JSON files.
+- **Comparison Tool**: Compare two or more JSON files side-by-side.
+- **Summary and Statistics**: Display summary statistics of the data.
+- **Help Documentation**: Provide in-app documentation and help sections.
+- **Error Handling and Logging**: Track and manage errors or issues within the application.
+- **Notifications and Alerts**: Send notifications or alerts based on specific conditions.
+- **Customizable Dashboard**: Customize the interface and display preferences.
+- **Multi-language Support**: Extend using Qt's translation features.
+- **Data Backup and Recovery**: Placeholder for future enhancements.
+- **Batch Processing**: Enable batch processing capabilities.
 
 ### Usage
 
@@ -101,8 +129,14 @@ The project directory structure is as follows:
      python3 jsdoodu.py
      ```
 
-3. **Accessing the Application**:
+2. **Accessing the Application**:
    - Open a web browser and visit `http://localhost`. This will load `index.html` and initiate data capture from the client's browser.
+
+3. **Running JSON Data Viewer**:
+   - Navigate to `jsdoodu/` directory and run command:
+     ```sh
+     python3 json_viewer.py
+     ```
 
 4. **BeEF-XSS Integration**:
    - The application integrates BeEF-XSS capabilities via `http://127.0.0.1:3000/hook.js`. Ensure your BeEF-XSS server is running on this endpoint for advanced browser exploitation features.
