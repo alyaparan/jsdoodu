@@ -52,9 +52,9 @@ JS.Doodu is a sophisticated web application designed to capture detailed browser
 7. **Access the Application**:
    Open a web browser and navigate to `http://localhost`. This will load the `index.html` page and start capturing client-side data.
 
-8. **Install Python Dependencies for the JSON Data Viewer**:
+8. **Install Python Dependencies.**:
     ```sh
-    pip install PyQt5 matplotlib pandas plotly
+    pip install -r requirements.txt
     ```
 
 9. **Run the JSON Data Viewer**:
